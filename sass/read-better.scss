@@ -6,14 +6,14 @@ html {
 
 body {
     margin: 0;
-    padding: 5%;
+    padding: 2em 5% 0;
     background: #FDFDFD;
     color: #342E38;
     line-height: 1.5em;
 }
 
 body, a {
-    font-family: Palatino, Georgia, serif;
+    font-family: Georgia, serif;
 }
 
 a { 
@@ -24,20 +24,30 @@ a {
     &:hover { text-decoration: underline; }
 }
 
-p:first-child { 
+p[align=justify] {
+    a {
+        margin-left: 0.1em; 
+        vertical-align: super; 
+        font-size: 0.9em; 
+    }
+}
+
+p.links { 
     text-align: center; 
-    a:nth-child(2) { 
-        font-weight: bold; 
-        margin: 0 2.5em; 
+    a { 
+        margin: 0 1.25em; 
+        &:nth-child(2) {
+            font-weight: bold;
+        }
     }
 }
 
 @media screen and (min-width: 961px)
 {
-    body { margin: 0 5% }
+    body { margin: 0 10% }
 }
 
 @media screen and (min-width: 1600px)
 {
-    body { margin: 0 10% }
+    body { margin: 0 15% }
 }

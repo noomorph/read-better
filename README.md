@@ -6,12 +6,19 @@ read-better
 To use it, embed the following two lines:
 
 ```html
+...
 <head>
 ...
 <meta name="viewport" content="width=device-width" /> <!-- required for mobile devices -->
 <link rel="stylesheet" type="text/css" href="/path/to/read-better.css"> <!-- your path to css -->
 ...
 </head>
+```
+
+Don't forget about ```<doctype>``` in the beginning of document because otherwise IE will jump into quirks mode.
+
+```html
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 ```
 
 For quick test on desktop browser you can insert into **head**:
