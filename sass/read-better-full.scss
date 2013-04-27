@@ -1,0 +1,20 @@
+@import 'read-better-core';
+
+html { 
+    background: #333;
+}
+
+body {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+@include read-better-scoped('body');
+
+@media screen and (min-width: 961px) {
+    body { margin: 0 10% }
+}
+
+@media screen and (min-width: 1600px) {
+    body { margin: 0 15% }
+}

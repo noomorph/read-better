@@ -1,0 +1,42 @@
+@mixin read-better-scoped($container) {
+    #{$container} {
+        margin: 0;
+        padding: 2em 1em 0 1em;
+        background: #FDFDFD;
+        color: #342E38;
+        line-height: 1.5em;
+        font-family: Georgia, serif;
+
+        a { 
+            font-family: Georgia, serif;
+            font-size: 1.1em;
+            color: #35C;    
+            text-decoration: none;
+            &:visited { color: #5B2EC1; }
+            &:hover { text-decoration: underline; }
+        }
+
+        p[align=justify] {
+            a {
+                margin-left: 0.1em; 
+                vertical-align: super; 
+                font-size: 0.9em; 
+            }
+        }
+
+        p.links { 
+            text-align: center; 
+            a { 
+                margin: 0 1.25em; 
+                &.index, &:nth-child(2) {
+                    font-weight: bold;
+                }
+            }
+            &.custom {
+                a:nth-child(2) {
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
